@@ -6,7 +6,7 @@ Questo è un sito web statico moderno per una designer che lavora su una vasta g
 
 - `index.html` - Homepage del sito
 - `progetti.html` - Pagina dei progetti
-- `contatti.html` - Pagina dei contatti
+- `contatti.html` - Pagina dei contatti 
 - `css/` - Directory per i file CSS
   - `style.css` - Foglio di stile principale
   - `additional.css` - Stili aggiuntivi
