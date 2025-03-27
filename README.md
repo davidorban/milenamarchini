@@ -45,4 +45,4 @@ Una volta configurato, ogni push sul branch `main` attiverà automaticamente il 
 
 ## Ultimo aggiornamento
 
-Ultimo aggiornamento: 27 Marzo 2025
+Ultimo aggiornamento: 27 Marzo 2025 - 16:56
