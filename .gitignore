@@ -13,3 +13,8 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Deployment scripts
+deploy.sh
+deploy.ps1
+setup-github-secrets.ps1
