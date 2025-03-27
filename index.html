@@ -1,66 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milena Marchini</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header, footer {
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 1rem;
-        }
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        h1 {
-            color: #444;
-        }
-        footer {
-            margin-top: 2rem;
-        }
-    </style>
+    <title>Milena Marchini | Designer</title>
+    <link rel="stylesheet" href="css/style.css?v=1.1">
+    <link rel="stylesheet" href="css/additional.css?v=1.1">
+    <link rel="stylesheet" href="css/hero.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Milena Marchini</h1>
-        <p>Welcome to my personal website</p>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Milena Marchini</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="progetti.html" class="nav-link">Progetti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contatti.html" class="nav-link">Contatti</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
     </header>
     
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Hello! This is a placeholder section where you can introduce yourself. Write about your background, interests, and expertise. This is a great place to share your story with visitors.</p>
-        </section>
-        
-        <section>
-            <h2>Projects</h2>
-            <p>Here you can showcase your work, research, or creative projects. Each project could include a brief description, images, and links to more information.</p>
-            <ul>
-                <li>Project 1 - Brief description goes here</li>
-                <li>Project 2 - Brief description goes here</li>
-                <li>Project 3 - Brief description goes here</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me at: example@email.com</p>
-        </section>
-    </main>
+    <section class="hero" style="background-image: url('img/hero-bg.jpg');">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Ciao, sono Milena</h1>
+                <p>Designer creativa specializzata in progetti innovativi e soluzioni visive uniche</p>
+                <a href="progetti.html" class="btn">Scopri i miei progetti</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="chi-sono">
+        <div class="container">
+            <div class="section-title">
+                <h2>Chi Sono</h2>
+                <p>La mia passione per il design e l'arte</p>
+            </div>
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <p>Sono una designer con esperienza in una vasta gamma di progetti creativi. La mia passione è trasformare idee in esperienze visive uniche e coinvolgenti che comunicano efficacemente il messaggio del cliente.</p>
+                    <p>Con un background in design grafico, web design e illustrazione, offro soluzioni complete che combinano estetica e funzionalità. Ogni progetto è un'opportunità per creare qualcosa di memorabile e significativo.</p>
+                    <p>Il mio approccio al design è guidato dalla curiosità, dalla ricerca e dall'attenzione ai dettagli. Credo che il buon design debba non solo essere bello, ma anche risolvere problemi e migliorare l'esperienza dell'utente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="competenze">
+        <div class="container">
+            <div class="section-title">
+                <h2>Le Mie Competenze</h2>
+                <p>Aree di specializzazione e strumenti</p>
+            </div>
+            <div class="skills-container fade-in">
+                <div class="skill-category">
+                    <h3>Design Grafico</h3>
+                    <ul>
+                        <li>Identità visiva e branding</li>
+                        <li>Materiale promozionale</li>
+                        <li>Packaging design</li>
+                        <li>Editoria e layout</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Design</h3>
+                    <ul>
+                        <li>UI/UX Design</li>
+                        <li>Responsive web design</li>
+                        <li>Prototipazione</li>
+                        <li>Design di interfacce</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Illustrazione</h3>
+                    <ul>
+                        <li>Illustrazione digitale</li>
+                        <li>Character design</li>
+                        <li>Infografiche</li>
+                        <li>Illustrazioni editoriali</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="progetti-recenti">
+        <div class="container">
+            <div class="section-title">
+                <h2>Progetti Recenti</h2>
+                <p>Una selezione dei miei lavori più recenti</p>
+            </div>
+            <div class="projects-grid fade-in">
+                <div class="project-card" data-category="web">
+                    <img src="img/placeholder-1.jpg" alt="Progetto Web Design" class="project-img">
+                    <div class="project-content">
+                        <h3>Redesign Sito Web Aziendale</h3>
+                        <p>Riprogettazione completa dell'identità online di un'azienda nel settore tecnologico.</p>
+                        <a href="progetti.html" class="btn">Vedi dettagli</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="grafico">
+                    <img src="img/placeholder-2.jpg" alt="Progetto Branding" class="project-img">
+                    <div class="project-content">
+                        <h3>Branding per Startup</h3>
+                        <p>Creazione di un'identità visiva completa per una startup innovativa nel settore alimentare.</p>
+                        <a href="progetti.html" class="btn">Vedi dettagli</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="illustrazione">
+                    <img src="img/placeholder-3.jpg" alt="Progetto Illustrazione" class="project-img">
+                    <div class="project-content">
+                        <h3>Serie di Illustrazioni</h3>
+                        <p>Collezione di illustrazioni digitali create per una campagna pubblicitaria.</p>
+                        <a href="progetti.html" class="btn">Vedi dettagli</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-projects">
+                <a href="progetti.html" class="btn">Visualizza tutti i progetti</a>
+            </div>
+        </div>
+    </section>
     
     <footer>
-        <p>&copy; 2023 Milena Marchini. All rights reserved.</p>
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+            </ul>
+            <p>&copy; 2025 Milena Marchini. Tutti i diritti riservati.</p>
+        </div>
     </footer>
+    
+    <script src="js/main.js"></script>
 </body>
 </html>
-

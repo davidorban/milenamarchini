@@ -1,0 +1,7 @@
+/* Hero background styles */
+.hero {
+  background-image: url('../img/hero-bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-color: transparent !important;
+}

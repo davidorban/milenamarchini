@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti | Milena Marchini</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Stili specifici per la pagina contatti */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .contact-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .contact-card i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+        
+        .contact-card h3 {
+            margin-bottom: 15px;
+        }
+        
+        .contact-form {
+            background-color: white;
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .alert {
+            padding: 15px;
+            border-radius: var(--radius);
+            margin-bottom: 20px;
+        }
+        
+        .alert.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Milena Marchini</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="progetti.html" class="nav-link">Progetti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contatti.html" class="nav-link active">Contatti</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="page-header">
+        <div class="container">
+            <h1>Contattami</h1>
+            <p>Hai un progetto in mente? Parliamone insieme</p>
+        </div>
+    </section>
+    
+    <section id="info-contatto">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-card fade-in">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@milenamarchini.it</p>
+                </div>
+                
+                <div class="contact-card fade-in">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telefono</h3>
+                    <p>+39 123 456 7890</p>
+                </div>
+                
+                <div class="contact-card fade-in">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Studio</h3>
+                    <p>Via del Design 123, Milano, Italia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="form-contatto">
+        <div class="container">
+            <div class="section-title">
+                <h2>Inviami un Messaggio</h2>
+                <p>Compila il modulo sottostante per iniziare una collaborazione</p>
+            </div>
+            
+            <div class="contact-form fade-in">
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Oggetto</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Messaggio</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn">Invia Messaggio</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Domande Frequenti</h2>
+                <p>Risposte alle domande più comuni</p>
+            </div>
+            
+            <div class="faq-container fade-in">
+                <div class="faq-item">
+                    <h3>Quali sono i tuoi tempi di risposta?</h3>
+                    <p>Generalmente rispondo alle richieste entro 1-2 giorni lavorativi. Per progetti urgenti, ti prego di specificarlo nel messaggio.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Come funziona il processo di collaborazione?</h3>
+                    <p>Il processo inizia con una consultazione iniziale per discutere il tuo progetto e le tue esigenze. Successivamente, sviluppo un preventivo dettagliato e una timeline. Una volta approvati, procedo con la fase creativa, mantenendo una comunicazione costante per feedback e revisioni.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Quali sono i tuoi costi?</h3>
+                    <p>I costi variano in base alla complessità e alla portata del progetto. Ogni preventivo è personalizzato in base alle specifiche esigenze del cliente. Contattami per ricevere un preventivo gratuito.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Lavori con clienti internazionali?</h3>
+                    <p>Assolutamente sì! Collaboro regolarmente con clienti da tutto il mondo. Le consultazioni possono avvenire tramite videochiamata e la comunicazione può essere gestita via email o attraverso piattaforme di project management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+            </ul>
+            <p>&copy; 2025 Milena Marchini. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

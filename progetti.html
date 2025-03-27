@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetti | Milena Marchini</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Milena Marchini</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="progetti.html" class="nav-link active">Progetti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contatti.html" class="nav-link">Contatti</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="page-header">
+        <div class="container">
+            <h1>I Miei Progetti</h1>
+            <p>Esplora il mio portfolio di lavori creativi</p>
+        </div>
+    </section>
+    
+    <section id="filtro-progetti">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="tutti" onclick="filterProjects('tutti')">Tutti</button>
+                <button class="filter-btn" data-category="web" onclick="filterProjects('web')">Web Design</button>
+                <button class="filter-btn" data-category="grafico" onclick="filterProjects('grafico')">Design Grafico</button>
+                <button class="filter-btn" data-category="illustrazione" onclick="filterProjects('illustrazione')">Illustrazione</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Web Design Projects -->
+                <div class="project-card" data-category="web">
+                    <img src="img/placeholder-1.jpg" alt="Progetto Web Design" class="project-img">
+                    <div class="project-content">
+                        <h3>Redesign Sito Web Aziendale</h3>
+                        <p>Riprogettazione completa dell'identità online di un'azienda nel settore tecnologico.</p>
+                        <p class="project-tags">Web Design, UI/UX, Responsive</p>
+                        <a href="#" class="btn">Vedi caso studio</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <img src="img/placeholder-4.jpg" alt="Progetto E-commerce" class="project-img">
+                    <div class="project-content">
+                        <h3>Piattaforma E-commerce</h3>
+                        <p>Design di un'interfaccia e-commerce intuitiva per un brand di moda sostenibile.</p>
+                        <p class="project-tags">E-commerce, UI/UX, Mobile First</p>
+                        <a href="#" class="btn">Vedi caso studio</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <img src="img/placeholder-7.jpg" alt="App Mobile" class="project-img">
+                    <div class="project-content">
+                        <h3>App per Fitness</h3>
+                        <p>Design di un'applicazione mobile per il tracciamento delle attività fitness e alimentazione.</p>
+                        <p class="project-tags">App Design, UI/UX, Prototipazione</p>
+                        <a href="#" class="btn">Vedi caso studio</a>
+                    </div>
+                </div>
+                
+                <!-- Graphic Design Projects -->
+                <div class="project-card" data-category="grafico">
+                    <img src="img/placeholder-2.jpg" alt="Progetto Branding" class="project-img">
+                    <div class="project-content">
+                        <h3>Branding per Startup</h3>
+                        <p>Creazione di un'identità visiva completa per una startup innovativa nel settore alimentare.</p>
+                        <p class="project-tags">Branding, Logo Design, Identità Visiva</p>
+                        <a href="#" class="btn">Vedi caso studio</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="grafico">
+                    <img src="img/placeholder-5.jpg" alt="Progetto Packaging" class="project-img">
+                    <div class="project-content">
+                        <h3>Packaging Ecosostenibile</h3>
+                        <p>Design di packaging innovativo ed ecosostenibile per una linea di prodotti cosmetici naturali.</p>
+                        <p class="project-tags">Packaging, Sostenibilità, Design Prodotto</p>
+                        <a href="#" class="btn">Vedi caso studio</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="grafico">
+                    <img src="img/placeholder-8.jpg" alt="Progetto Editoriale" class="project-img">
+                    <div class="project-content">
+                        <h3>Rivista di Design</h3>
+                        <p>Layout e design editoriale per una rivista trimestrale dedicata al design contemporaneo.</p>
+                        <p class="project-tags">Editorial Design, Typography, Layout</p>
+                        <a href="#" class="btn">Vedi caso studio</a>
+                    </div>
+                </div>
+                
+                <!-- Illustration Projects -->
+                <div class="project-card" data-category="illustrazione">
+                    <img src="img/placeholder-3.jpg" alt="Progetto Illustrazione" class="project-img">
+                    <div class="project-content">
+                        <h3>Serie di Illustrazioni</h3>
+                        <p>Collezione di illustrazioni digitali create per una campagna pubblicitaria.</p>
+                        <p class="project-tags">Illustrazione Digitale, Character Design</p>
+                        <a href="#" class="btn">Vedi caso studio</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="illustrazione">
+                    <img src="img/placeholder-6.jpg" alt="Progetto Infografica" class="project-img">
+                    <div class="project-content">
+                        <h3>Infografiche Interattive</h3>
+                        <p>Serie di infografiche interattive per visualizzare dati complessi in modo chiaro e coinvolgente.</p>
+                        <p class="project-tags">Infografica, Data Visualization</p>
+                        <a href="#" class="btn">Vedi caso studio</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="illustrazione">
+                    <img src="img/placeholder-9.jpg" alt="Progetto Illustrazione Editoriale" class="project-img">
+                    <div class="project-content">
+                        <h3>Illustrazioni per Libro</h3>
+                        <p>Serie di illustrazioni create per un libro di racconti per giovani adulti.</p>
+                        <p class="project-tags">Illustrazione Editoriale, Storytelling</p>
+                        <a href="#" class="btn">Vedi caso studio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="collaborazione">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Hai un progetto in mente?</h2>
+                <p>Sono sempre alla ricerca di nuove sfide creative e collaborazioni interessanti. Se hai un'idea o un progetto che vorresti realizzare insieme, non esitare a contattarmi.</p>
+                <a href="contatti.html" class="btn">Parliamone</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+            </ul>
+            <p>&copy; 2025 Milena Marchini. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* Stili aggiuntivi per migliorare l'aspetto del sito */
+
+/* Stile per la pagina header */
+.page-header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Stili per la sezione competenze */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.skill-category {
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.skill-category h3 {
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.skill-category ul {
+    list-style-type: none;
+}
+
+.skill-category li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.skill-category li:last-child {
+    border-bottom: none;
+}
+
+/* Stili per la sezione about */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+/* Stili per i filtri progetti */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background: none;
+    border: 2px solid var(--primary-color);
+    padding: 8px 20px;
+    margin: 0 10px 10px 0;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Stili per le FAQ */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.faq-item h3 {
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+/* Stili per il CTA box */
+.cta-box {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 60px;
+    border-radius: var(--radius);
+    text-align: center;
+    margin: 60px 0;
+}
+
+.cta-box h2 {
+    margin-bottom: 20px;
+}
+
+.cta-box p {
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-box .btn {
+    background-color: white;
+    color: var(--accent-color);
+}
+
+.cta-box .btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Animazioni */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stili per i tag dei progetti */
+.project-tags {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Stile per il pulsante "Visualizza tutti i progetti" */
+.view-all-projects {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Responsive per about section */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+}
