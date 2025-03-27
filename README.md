@@ -42,3 +42,7 @@ Per configurare il deployment automatico, è necessario aggiungere i seguenti se
 4. Assicurati che la chiave SSH sia stata aggiunta al server remoto
 
 Una volta configurato, ogni push sul branch `main` attiverà automaticamente il workflow di deployment.
+
+## Ultimo aggiornamento
+
+Ultimo aggiornamento: 27 Marzo 2025
